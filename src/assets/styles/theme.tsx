@@ -1,9 +1,10 @@
 export const theme = {
     colors: {
+        white: '#FFFFFF',
+        black: '#000000',
         main: '#007E7A',
         links: '#71B0AE',
-        white: '#FFFFFF',
-        black: '#000000'
+        bcgActiveLink: '#1f1f1b',
     },
     fontSize: {
         desktop: {
