@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { Nav, NavIcon, SidebarNav, SidebarWrap } from './Sidebar.styles'
+import { Nav, NavIcon, SidebarNav, SidebarWrap, MenuDesktop } from './Sidebar.styles';
 import { IconContext } from "react-icons";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { MenuData } from 'data/MenuData';
@@ -16,6 +16,11 @@ const Sidebar:FC = (): JSX.Element => {
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
       <Nav >
+        <MenuDesktop>
+          {MenuData.map(( item, index ) => {
+            return <Menu item={item} key={index} />
+          })}
+        </MenuDesktop> 
         <NavIcon onClick={showSidebar}>
           <AiOutlineMenu />
         </NavIcon>

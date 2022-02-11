@@ -15,9 +15,19 @@ export const MenuLink = styled(Link)`
         background-color: ${({ theme }) => theme.colors.bcgActiveLink};
         border-left: 4px solid ${({ theme }) => theme.colors.main};
     }
+
+    @media(min-width: 992px) {
+        &:hover {
+            border: none;
+        }
+    }
 `
 
 export const MenuLabel = styled.span`
+    margin-left: 1rem;
+`
+
+export const SubmenuIconWrap = styled.div`
     margin-left: 1rem;
 `
 
@@ -30,9 +40,19 @@ export const DropdownLink = styled(Link)`
     padding-left: 3rem;
     text-decoration: none;
     color: ${({ theme }) => theme.colors.white};
+    @media(min-width: 992px) {
+        padding-left: 2rem;
+    }
 
     &:hover {
         background-color: ${({ theme }) => theme.colors.bcgActiveLink};
         border-left: 4px solid ${({ theme }) => theme.colors.main};
+    }
+`
+
+export const DropdownLinkWrap = styled.div`
+
+    @media(min-width: 992px) {
+        position: absolute;
     }
 `

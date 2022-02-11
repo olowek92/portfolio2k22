@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"; 
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -9,6 +9,10 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: 'Montserrat', sans-serif;
+
+        /* Test start */
+        background-color: grey;
+        /* Test end */
     }
 
     a, button {
