@@ -5,7 +5,27 @@ export const Nav = styled.div`
     justify-content: flex-start;
     align-items: center;
     height: 5rem;
-    background-color: ${({ theme }) => theme.colors.black};
+
+    @media(min-width: 992px) {
+        justify-content: space-between;
+    }
+`
+
+export const NavLogo = styled.img`
+    display: none;
+
+    @media(min-width: 992px) {
+        display: block;
+        margin-left: 2rem;
+    }
+`
+
+export const MenuDesktop = styled.div`
+    display: none;
+
+    @media(min-width: 992px) {
+        display: flex;
+    }
 `
 
 export const NavIcon = styled.div`
@@ -16,6 +36,10 @@ export const NavIcon = styled.div`
     font-size: 2rem;
     margin-left: 2rem;
     cursor: pointer;
+
+    @media(min-width: 992px) {
+        display: none;
+    }
 `
 
 export const SidebarNav = styled.div<{ sidebar: boolean }>`
@@ -26,8 +50,12 @@ export const SidebarNav = styled.div<{ sidebar: boolean }>`
     top: 0;
     left: ${({ sidebar }) => sidebar ? '0' : '-100%'};
     transition: 350ms;
+
+    @media(min-width: 992px) {
+        display: none;
+    }
 `
 
 export const SidebarWrap = styled.div`
-    
+
 `

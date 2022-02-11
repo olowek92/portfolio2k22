@@ -2,24 +2,24 @@ import React from 'react';
 import {
     AiFillCaretDown,
     AiFillCaretUp,
-    AiOutlineHome,
     AiOutlineMoneyCollect,
     AiOutlineUser,
-    AiOutlineMessage
+    AiOutlineFundProjectionScreen
 } from 'react-icons/ai';
-import { FaOpencart } from 'react-icons/fa';
+import { BiMessageRoundedError, BiMessageRoundedDetail } from 'react-icons/bi';
 import { MenuItem } from 'models/MenuItem';
+
 
 export const MenuData: MenuItem[] = [
     {
         title: 'About',
         path: '/about',
-        icon: <AiOutlineHome />,
+        icon: <BiMessageRoundedError />,
     },
     {
         title: 'Projects',
         path: '/projects',
-        icon: <FaOpencart />,
+        icon: <AiOutlineFundProjectionScreen />,
         iconClosed: <AiFillCaretDown />,
         iconOpened: <AiFillCaretUp />,
         submenu: [
@@ -38,6 +38,6 @@ export const MenuData: MenuItem[] = [
     {
         title: 'Contact',
         path: '/contact',
-        icon: <AiOutlineMessage />,
+        icon: <BiMessageRoundedDetail />,
     },
 ]
