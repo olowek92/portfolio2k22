@@ -18,6 +18,7 @@ export const MenuLink = styled(Link)`
 
     @media(min-width: 992px) {
         &:hover {
+            background-color: transparent;
             border: none;
         }
     }
@@ -40,13 +41,19 @@ export const DropdownLink = styled(Link)`
     padding-left: 3rem;
     text-decoration: none;
     color: ${({ theme }) => theme.colors.white};
-    @media(min-width: 992px) {
-        padding-left: 2rem;
-    }
 
     &:hover {
         background-color: ${({ theme }) => theme.colors.bcgActiveLink};
         border-left: 4px solid ${({ theme }) => theme.colors.main};
+    }
+
+    @media(min-width: 992px) {
+        padding-left: 2rem;
+
+        &:hover {
+            background-color: transparent;
+            border-left: 4px solid transparent;
+        }
     }
 `
 

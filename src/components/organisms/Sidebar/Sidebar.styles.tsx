@@ -5,10 +5,26 @@ export const Nav = styled.div`
     justify-content: flex-start;
     align-items: center;
     height: 5rem;
-    background-color: ${({ theme }) => theme.colors.black};
 
     @media(min-width: 992px) {
-        justify-content: flex-end;
+        justify-content: space-between;
+    }
+`
+
+export const NavLogo = styled.img`
+    display: none;
+
+    @media(min-width: 992px) {
+        display: block;
+        margin-left: 2rem;
+    }
+`
+
+export const MenuDesktop = styled.div`
+    display: none;
+
+    @media(min-width: 992px) {
+        display: flex;
     }
 `
 
@@ -42,12 +58,4 @@ export const SidebarNav = styled.div<{ sidebar: boolean }>`
 
 export const SidebarWrap = styled.div`
 
-`
-
-export const MenuDesktop = styled.div`
-    display: none;
-
-    @media(min-width: 992px) {
-        display: flex;
-    }
 `
