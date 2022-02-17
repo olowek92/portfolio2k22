@@ -5,6 +5,7 @@ import { theme } from 'assets/styles/theme';
 import Sidebar from 'components/organisms/Sidebar/Sidebar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Contact, MebBox, About, TimberWare } from 'components/templates/templates';
+import Form from 'components/organisms/Form/Form';
 
 const App:FC = (): JSX.Element => {
     return (
@@ -12,6 +13,7 @@ const App:FC = (): JSX.Element => {
             <ThemeProvider theme={theme}>
                 <GlobalStyle />
                 <Sidebar />
+                <Form />
                 <Routes>
                     <Route path='/about' element={<About />}></Route>
                     <Route path='/projects' element={<About />}></Route>
