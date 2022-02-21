@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import mobileBackground from 'assets/images/Mobile.png';
+import mobileBackground from 'assets/images/Mobile_without_person.png';
 import tabletBackground from 'assets/images/Tablet.png';
 import desktopBackground from 'assets/images/bcg_all_back_with_person_main.png';
 

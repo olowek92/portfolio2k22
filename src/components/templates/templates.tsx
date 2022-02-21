@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { NavElement } from './templates.styles';
 import { useChangeBackground } from 'hooks/useChangeBackground';
+import Form from 'components/organisms/Form/Form';
 
 export const About:FC = ():JSX.Element => {
   useChangeBackground();
@@ -23,5 +24,5 @@ export const MebBox:FC = ():JSX.Element => {
 export const Contact:FC = ():JSX.Element => {
   useChangeBackground();
   
-  return <NavElement></NavElement>;
+  return <Form />;
 };
