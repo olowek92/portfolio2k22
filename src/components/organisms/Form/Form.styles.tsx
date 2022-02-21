@@ -52,6 +52,14 @@ export const Input = styled.input`
     font-family: "Roboto", sans-serif;
 `
 
+export const Span = styled.span`
+  font-size: 12px;
+  color: red;
+  height: 10px;
+  width: 100%;
+  display: block;
+`;
+
 export const Textarea = styled.textarea`
     width: 74%; 
     outline: 0 none transparent;
