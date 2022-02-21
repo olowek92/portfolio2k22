@@ -1,5 +1,20 @@
 import React, { FC, useRef } from 'react';
 import emailjs from "emailjs-com";
+import { 
+  FormWrap,
+  Label,
+  DivName,
+  DivEmail,
+  DivQuestion,
+  DivButton,
+  ImgFullArrow,
+  ImgBlankArrow,
+  Input,
+  Textarea,
+  Button
+} from './Form.styles';
+import FullArrow from 'assets/images/FullArrow.png'; 
+import BlankArrow from 'assets/images/BlankArrow.png'; 
 
 const Form:FC = ():JSX.Element => {
 
@@ -17,15 +32,53 @@ const Form:FC = ():JSX.Element => {
   };
 
   return (
-    <form onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="name" />
-      <label>Email</label>
-      <input type="email" name="email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <FormWrap onSubmit={sendEmail}>
+      <Label htmlFor='name'>
+        <DivName>
+          <ImgFullArrow 
+            src={FullArrow}
+            alt="FullArrow"/>
+          <Input 
+            name="name"
+            type="text" 
+            placeholder="Name"
+            id='name'
+          />
+        </DivName>
+      </Label>
+      <Label htmlFor='email'>
+        <DivEmail>
+          <ImgBlankArrow 
+            src={BlankArrow} 
+            alt="BlankArrow"/>
+          <Input 
+            name="email"
+            type="email" 
+            placeholder="E-mail"
+            id='email'
+          />
+        </DivEmail>
+      </Label>
+      <Label htmlFor='message'>
+        <DivQuestion>
+          <ImgFullArrow 
+            src={FullArrow}
+            alt="FullArrow"
+          />
+          <Textarea
+            name="message"
+            placeholder="How are you?"
+            id='message'
+          />
+        </DivQuestion>
+      </Label>
+      <Label htmlFor='btn'>
+        <DivButton>
+          <ImgBlankArrow src={BlankArrow} alt="BlankArrow"/>
+          <Button type="submit" id='btn'>wyślij</Button>
+        </DivButton>
+      </Label>
+    </FormWrap>
   )
 }
 
