@@ -3,12 +3,6 @@ import { NavElement } from './templates.styles';
 import { useChangeBackground } from 'hooks/useChangeBackground';
 import Form from 'components/organisms/Form/Form';
 
-export const About:FC = ():JSX.Element => {
-  useChangeBackground();
-
-  return <NavElement></NavElement>;
-};
-
 export const TimberWare:FC = ():JSX.Element => {
   useChangeBackground();
 

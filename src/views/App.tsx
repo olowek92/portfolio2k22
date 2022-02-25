@@ -4,7 +4,8 @@ import { GlobalStyle } from 'assets/styles/GlobalStyle';
 import { theme } from 'assets/styles/theme';
 import Sidebar from 'components/organisms/Sidebar/Sidebar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Contact, MebBox, About, TimberWare } from 'components/templates/templates';
+import { Contact, MebBox, TimberWare } from 'components/templates/templates';
+import { About } from 'components/templates/About/About';
 import Footer from 'components/molecules/Footer/Footer';
 
 
