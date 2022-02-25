@@ -5,6 +5,7 @@ import { theme } from 'assets/styles/theme';
 import Sidebar from 'components/organisms/Sidebar/Sidebar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Contact, MebBox, About, TimberWare } from 'components/templates/templates';
+import Footer from 'components/molecules/Footer/Footer';
 
 
 const App:FC = (): JSX.Element => {
@@ -20,6 +21,7 @@ const App:FC = (): JSX.Element => {
                     <Route path='/projects/meb-box' element={<MebBox />}></Route>
                     <Route path='/contact' element={<Contact />}></Route>
                 </Routes>
+                <Footer />
             </ThemeProvider>
         </Router>
     )
