@@ -148,7 +148,7 @@ const SendEmail = (e:any):void => {
       <Label htmlFor='btn'>
         <DivButton>
           <ImgBlankArrow src={BlankArrow} alt="BlankArrow"/>
-          <Button type="submit" id='btn'>wyślij</Button>
+          <Button type="submit" id='btn'>send</Button>
         </DivButton>
         <Span>
           {succeedMessage.formSent === error ? error : ""}
