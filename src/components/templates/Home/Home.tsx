@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { 
     HomeMain,
     HomeWrap, 
@@ -9,7 +9,7 @@ import {
 import name from 'assets/images/Name.png';
 import { useChangeBackground } from 'hooks/useChangeBackground';
 
-export const Home = ():JSX.Element => {
+export const Home: FC = ():JSX.Element => {
     useChangeBackground();
 
   return (

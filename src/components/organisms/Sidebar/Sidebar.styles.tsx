@@ -13,6 +13,7 @@ export const Nav = styled.div`
 
 export const NavLogo = styled.img`
     display: none;
+    cursor: pointer;
 
     @media(min-width: 992px) {
         display: block;
