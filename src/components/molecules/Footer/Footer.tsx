@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Test, FooterLink } from './Footer.styles';
 import { 
     AiFillGithub,
@@ -10,7 +10,7 @@ const GithubUrl = "https://github.com/olowek92";
 const LinkedInUrl = "https://www.linkedin.com/in/wojciech-ołownia/";
 const FacebookUrl = "https://www.facebook.com/woj.tek.142035";
 
-const Footer = ():JSX.Element => {
+const Footer: FC = ():JSX.Element => {
   return (
     <Test>
         <FooterLink href={GithubUrl} target="_blank">
