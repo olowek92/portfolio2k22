@@ -6,8 +6,13 @@ export const AboutMain = styled.div`
     margin: 0 auto;
     display: flex;
 
-    @media(min-width: 992px) {
+    @media(min-width: 768px) {
         width: 50%;
+        transform: translateX(-100px);
+    }
+
+    @media(min-width: 992px) {
+        transform: none;
     }
 `
 

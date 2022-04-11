@@ -5,6 +5,10 @@ export const Container = styled.div`
     max-width: 800px;
     margin: 0 auto;
     padding: 20px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 `
 
 export const SwiperContainer = styled.div`
