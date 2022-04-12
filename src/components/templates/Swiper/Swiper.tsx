@@ -4,6 +4,7 @@ import { SwiperItemType } from 'types';
 import { Container, SwiperContainer, SwiperList, SwiperIndicator,SwiperIndicatorItem } from './Swiper.styles';
 import SwiperItem from './SwiperItem';
 import { getTouchEventData } from '../../../lib/dom'
+import { useChangeBackground } from 'hooks/useChangeBackground';
 
 export type Props = {
     items: Array<SwiperItemType>
@@ -12,6 +13,8 @@ export type Props = {
 export const MIN_SWIPE_REQUIRED = 40;
 
 export const Swiper = ({ items }: Props): JSX.Element => {
+    useChangeBackground();
+
     const containerRef = useRef<HTMLUListElement>(null);
     const containerWidthRef = useRef(0);
     const minOffsetXRef = useRef(0);
