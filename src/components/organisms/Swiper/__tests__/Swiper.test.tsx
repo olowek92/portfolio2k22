@@ -203,8 +203,6 @@ describe('<Swiper />', () => {
     });
   });
 
-  // Start
-
   it('should swipe items on indicator click', () => {
     const items = createRandomItems();
 

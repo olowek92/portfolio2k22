@@ -4,10 +4,11 @@ import { GlobalStyle } from 'assets/styles/GlobalStyle';
 import { theme } from 'assets/styles/theme';
 import Sidebar from 'components/organisms/Sidebar/Sidebar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Contact, MebBox, TimberWare } from 'components/templates/templates';
+import { MebBox } from 'components/templates/templates';
 import { About } from 'components/templates/About/About';
 import { Home } from 'components/templates/Home/Home';
-import { Swiper } from 'components/templates/Swiper/Swiper';
+import { Contact } from 'components/templates/Contact/Contact';
+import { Swiper } from 'components/organisms/Swiper/Swiper';
 import Footer from 'components/molecules/Footer/Footer';
 import pic1 from 'assets/images/pic1.jpg';
 import pic2 from 'assets/images/pic2.jpg';
@@ -49,7 +50,7 @@ const App:FC = (): JSX.Element => {
                 <Routes>
                     <Route path='/' element={<Home />}></Route>
                     <Route path='/about' element={<About />}></Route>
-                    <Route path='/projects' element={<About />}></Route>
+                    <Route path='/projects' element={<Swiper items={items} />}></Route>
                     <Route path='/projects/timber-ware' element={<Swiper items={items} />}></Route>
                     <Route path='/projects/meb-box' element={<MebBox />}></Route>
                     <Route path='/contact' element={<Contact />}></Route>

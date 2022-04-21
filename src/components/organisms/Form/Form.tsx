@@ -20,16 +20,16 @@ import BlankArrow from 'assets/images/BlankArrow.png';
 const Form:FC = ():JSX.Element => {
   
   const errorMessages = {
-    nameRequired: 'Imię jest wymagane',
-    nameTooShort: 'Imię jest za krótkie',
-    emailRequired: 'E-mail jest wymagany',
-    emailIncorrect: 'Niepoprawny adres e-mail',
-    messageRequired: 'Wiadomość jest wymagana',
-    messageTooShort: 'Wiadomość jest za krótka',
+    nameRequired: 'Name is required',
+    nameTooShort: 'Name is too short',
+    emailRequired: 'E-mail is required',
+    emailIncorrect: 'E-mail is invalid',
+    messageRequired: 'Message is required',
+    messageTooShort: 'Message is too short',
   }
 
   const succeedMessage = {
-      formSent: 'Formularz wysłany poprawnie!'
+      formSent: 'The form has been sent correctly!'
   }
 
 const validate = (form: { name: any; email: any; message: any; }): string => {
