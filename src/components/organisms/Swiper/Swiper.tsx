@@ -100,7 +100,6 @@ export const Swiper = ({ items }: Props): JSX.Element => {
     }
 
     return (
-        // <Container> is from App. I have to change it later.
         <Container>
             <SwiperContainer onTouchStart={onTouchstart} onMouseDown={onTouchstart}>
                 <SwiperList ref={containerRef} offsetX={offsetX} isSwiping={isSwiping}>
@@ -110,7 +109,6 @@ export const Swiper = ({ items }: Props): JSX.Element => {
                 </SwiperList>
                 <SwiperIndicator>
                     {items.map((_item, idx) => (
-                        // <SwiperIndicatorItem key={idx} />
                         <li onClick={() => indicatorOnClick(idx)} key={idx}
                         data-testid="indicator"
                         className={` ${
