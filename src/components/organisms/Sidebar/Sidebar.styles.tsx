@@ -51,6 +51,7 @@ export const SidebarNav = styled.div<{ sidebar: boolean }>`
     top: 0;
     left: ${({ sidebar }) => sidebar ? '0' : '-100%'};
     transition: 350ms;
+    z-index: 1;
 
     @media(min-width: 992px) {
         display: none;
